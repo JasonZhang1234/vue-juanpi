@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试图片占位问题</title>
+</head>
+<style type="text/css">
+	
+a{	
+	display: inline-block;
+	width:420px;
+	border:1px solid red;
+	position:relative;
+}
+
+a::before{
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+}
+
+img{
+	height:100%;
+	width:300px;
+}
+</style>
+<body>
+	<a>	
+		<img src="timg.jpg" alt="">
+	</>
+</body>
+</html>
